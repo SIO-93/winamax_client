@@ -4,35 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulaire Bets</title>
-    <style> 
-</style>
-</head> 
+</head>
 <body>
-<div class="form-container">
     <h2>Formulaire Bets</h2>
     <form action="#" method="post">
-        <div class="form-group">
-            <label for="id">ID :</label>
-            <input type="number" id="id" name="id" required>
-        </div>
-        <div class="form-group">
+        <div>
             <label for="exam">Exam :</label>
-            <input type="number" id="exam" name="exam" required>
+            <select id="exam" name="exam" required>
+                <option value="" disabled selected>-- Sélectionner un Exam --</option>
+                <option value="101">Développement</option>
+                <option value="102">Cybersécurité</option>
+                <option value="103">Maths</option>
+                <option value="104">Réseau</option>
+            </select>
         </div>
-        <div class="form-group">
+        <div>
             <label for="user_1">User 1 :</label>
-            <input type="number" id="user_1" name="user_1" required>
+            <select id="user_1" name="user_1" required>
+                <option value="" disabled selected>-- Sélectionner User 1 --</option>
+                <option value="1">Bello</option>
+                <option value="2">Bilal</option>
+                <option value="3">Mehdi</option>
+                <option value="4">Adama</option>
+            </select>
         </div>
-        <div class="form-group">
+        <div>
             <label for="user_2">User 2 :</label>
-            <input type="number" id="user_2" name="user_2" required>
+            <select id="user_2" name="user_2" required>
+                <option value="" disabled selected>-- Sélectionner User 2 --</option>
+                <option value="1">Lafuseew</option>
+                <option value="2">Sibiraj</option>
+                <option value="3">Ramy</option>
+                <option value="4">Komla</option>
+            </select>
         </div>
-        <div class="form-group">
+        <div>
             <label for="amount">Amount :</label>
             <input type="number" id="amount" name="amount" required>
         </div>
         <button type="submit">Soumettre</button>
     </form>
-</div>
 </body>
 </html>
